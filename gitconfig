@@ -1,0 +1,37 @@
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+	editor = nano
+[color]
+    ui = auto
+    status = auto
+    commit = auto
+    diff = auto
+    branch = auto
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    get = fetch --prune
+    publish = push --set-upstream origin HEAD
+    ff = merge origin
+[apply]
+    whitespace = strip
+    whitespace = nowarn
+[http]
+    sslVerify = 0
+    sslverfiy = 0
+[credential]
+    helper = cache --timeout=28800
+[init]
+    templatedir = ~/.git_template
+[user]
+    name = David Winegar
+    email = david.s.winegar@gmail.com
+[pull]
+    default = simple
+[push]
+    default = simple
