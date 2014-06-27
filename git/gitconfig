@@ -4,6 +4,7 @@
     bare = false
     logallrefupdates = true
 	editor = nano
+	autocrlf = input
 [color]
     ui = auto
     status = auto
