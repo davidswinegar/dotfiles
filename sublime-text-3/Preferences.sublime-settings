@@ -1,4 +1,6 @@
 {
+    "atomic_save": false,
+    "default_line_ending": "unix",
     "folder_exclude_patterns":
     [
         ".git",
@@ -15,6 +17,5 @@
         80
     ],
     "translate_tabs_to_spaces": true,
-    "use_tab_stops": true,
-    "default_line_ending": "unix"
+    "use_tab_stops": true
 }
