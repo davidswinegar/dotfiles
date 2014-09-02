@@ -3,7 +3,7 @@
     filemode = true
     bare = false
     logallrefupdates = true
-	editor = nano
+	editor = vim 
 	autocrlf = input
 [color]
     ui = auto

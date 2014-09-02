@@ -15,11 +15,7 @@ set showmatch " highlight matching brackets
 set hlsearch " highlight matches
 
 " remap movement keys
-map j <Left>
-map k <Down>
-map l <Up>
-map ; <Right>
-imap jk <Esc>
+imap <C-c> <Esc>
 
 " backup
 " set backup
