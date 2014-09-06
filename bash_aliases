@@ -73,6 +73,11 @@ fi
 function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
 function fname() { find . -iname "*$@*"; }
 
+# Alias creating a sublime project from the command line
+function sublimeproject() {
+    ~/.update_project.py $@
+}
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
