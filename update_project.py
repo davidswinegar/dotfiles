@@ -31,7 +31,7 @@ def create_sublime_project(project_dir):
     session_obj = json.loads(open(session_path).read(), strict=False)
     session_file.close()
     session_file = open(session_path, 'w')
-    session_obj['workspaces']['recent_workspaces'] = [workspace_file_path]
+    session_obj['workspaces']['recent_workspaces'].append(workspace_file_path)
     session_file.write(json.dumps(session_obj, indent=2, separators=(',', ': ')))
     session_file.close()
 
