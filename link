@@ -1,10 +1,10 @@
 #!/bin/bash
 SCRIPT_DIR=$(dirname $(readlink -f $0))
 
-ln -sT ${SCRIPT_DIR}/git/gitconfig ~/.gitconfig
-ln -sT ${SCRIPT_DIR}/git/gitignore ~/.gitignore
-ln -sT ${SCRIPT_DIR}/sh/bash_aliases ~/.bash_aliases
+ln -sT ${SCRIPT_DIR}/gitconfig ~/.gitconfig
+ln -sT ${SCRIPT_DIR}/gitignore ~/.gitignore
+ln -sT ${SCRIPT_DIR}/bash_aliases ~/.bash_aliases
 ln -sT ${SCRIPT_DIR}/sublime-text-3 ~/.config/sublime-text-3/Packages/User
 ln -sT ${SCRIPT_DIR}/vimrc ~/.vimrc
 ln -sT ${SCRIPT_DIR}/tmux.conf ~/.tmux.conf
-
+ln -sT ${SCRIPT_DIR}/update_project.py ~/.update_project.py
