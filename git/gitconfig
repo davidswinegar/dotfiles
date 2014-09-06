@@ -3,8 +3,8 @@
     filemode = true
     bare = false
     logallrefupdates = true
-	editor = vim 
-	autocrlf = input
+    editor = vim
+    autocrlf = input
 [color]
     ui = auto
     status = auto
@@ -27,8 +27,6 @@
     sslverfiy = 0
 [credential]
     helper = cache --timeout=28800
-[init]
-    templatedir = ~/.git_template
 [user]
     name = David Winegar
     email = david.s.winegar@gmail.com
