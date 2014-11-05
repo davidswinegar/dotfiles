@@ -53,6 +53,9 @@ alias l='ls -CF'
 alias du='du -h'
 alias df='df -h'
 
+# Alias tmux
+alias t='tmux'
+
 # Show status of a dd command from adifferent terminal
 alias ddst='ps -ef | grep dd | grep sudo | awk "{print \$2}" | xargs sudo kill -USR1'
 
