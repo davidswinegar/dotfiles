@@ -24,6 +24,11 @@ imap <C-c> <Esc>
 " set directory=~/vim-tmp
 " set writebackup
 
+" remap up/down movement keys
+nnoremap <Space> <C-f>  
+" hack for C-Space
+nnoremap <Nul> <C-b>
+
 " tabs
 nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-S-Tab> :tabprevious<CR>
