@@ -49,6 +49,16 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 " Change tags in pairs
 Plugin 'tpope/vim-surround'
+" cool status bar
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 filetype plugin indent on
+
+" airline
+let g:airline_detect_modified=1
+let g:airline_section_warning='' " remove whitespace indicators
+let g:airline_section_y=''
+let g:airline_powerline_fonts = 1
+set laststatus=2
+set noshowmode
