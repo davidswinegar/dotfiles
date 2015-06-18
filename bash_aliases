@@ -10,9 +10,9 @@ BOLDCYAN="\033[1;36m"
 
 # PS1 is prompt format - add git and set correct colors
 export PS1="${debian_chroot:+($debian_chroot)}\[$BOLDCYAN\]\w\[$NORMAL\]\$(__git_ps1 \"\[$YELLOW\](%s)\[$NORMAL\]\")\$ "
-# if not under jhbuild, show error
-if [ -z "$UNDER_JHBUILD" -a "$USERNAME" == "endless" ]; then
-    export PS1="\[$BLUE\][no jh!]\[$NORMAL\]$PS1"
+# if under jhbuild, show it
+if [ -n "$UNDER_JHBUILD" ]; then
+    export PS1="\[$BLUE\][jh]\[$NORMAL\]$PS1"
 fi
 
 # command just before prompt is shown
