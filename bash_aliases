@@ -158,7 +158,7 @@ if [ -a /Users/dwinegar/base/phacility/arcanist/resources/shell/bash-completion 
   source /Users/dwinegar/base/phacility/arcanist/resources/shell/bash-completion
 fi
 
-if [-a ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bash_profile ]; then
+if [ -a ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bash_profile ]; then
   # set up coursera bash profile
   source ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bash_profile
   source ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bashrc
