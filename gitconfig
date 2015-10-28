@@ -5,6 +5,7 @@
     logallrefupdates = true
     editor = vim
     autocrlf = input
+    ignorecase = false
 [color]
     ui = auto
     status = auto

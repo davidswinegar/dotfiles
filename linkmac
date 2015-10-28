@@ -1,0 +1,10 @@
+#!/bin/bash
+SCRIPT_DIR=$(dirname $(readlink $0))
+echo $SCRIPT_DIR
+ln -i ./gitconfig ~/.gitconfig
+ln -i ./gitignore ~/.gitignore
+ln -i ./bash_aliases ~/.bash_profile
+ln -i ./sublime-text-3 ~/.config/sublime-text-3/Packages/User
+ln -i ./vimrc ~/.vimrc
+ln -i ./tmux.conf ~/.tmux.conf
+ln -i ./update_project.py ~/.update_project.py

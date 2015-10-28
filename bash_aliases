@@ -8,6 +8,16 @@ NORMAL="\033[0m"
 BLUE="\033[2;34m"
 BOLDCYAN="\033[1;36m"
 
+# Make sure mac picks up git completion/prompts
+if [ -a /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+    source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+    source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+fi
+
+# mac directory highlighting for ls commands
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 # PS1 is prompt format - add git and set correct colors
 export PS1="${debian_chroot:+($debian_chroot)}\[$BOLDCYAN\]\w\[$NORMAL\]\$(__git_ps1 \"\[$YELLOW\](%s)\[$NORMAL\]\")\$ "
 # if under jhbuild, show it
@@ -37,12 +47,14 @@ alias gcot='git checkout -t'
 alias gcotb='git checkout --track -b'
 alias glog='git log'
 alias glogp='git log --pretty=format:"%h %s" --graph'
+alias ggrep='git grep'
 
 # cd aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -139,3 +151,21 @@ function alias_completion {
     done < <(alias -p | sed -Ene "s/$alias_regex/\1 '\2' '\3'/p")
     source "$tmp_file" && rm -f "$tmp_file"
 }; alias_completion
+
+if [ -a /Users/dwinegar/base/phacility/arcanist/resources/shell/bash-completion ]; then
+  # set up Arcanist
+  export PATH=~/base/phacility/arcanist/bin:$PATH
+  source /Users/dwinegar/base/phacility/arcanist/resources/shell/bash-completion
+fi
+
+if [-a ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bash_profile ]; then
+  # set up coursera bash profile
+  source ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bash_profile
+  source ~/base/coursera/puppet/modules/coursera-people/files/shared/bash/.bashrc
+fi
+
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi

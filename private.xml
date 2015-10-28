@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root>
+  <appdef>
+    <appname>SLACK</appname>
+    <equal>com.tinyspeck.slackmacgap</equal>
+  </appdef>
+
+  <item>
+    <name>Chrome hacks</name>
+    <appendix>Change C-j to down</appendix>
+    <appendix>Change C-k to up</appendix>
+    <identifier>private.app_chrome_up_down</identifier>
+    <only>GOOGLE_CHROME</only>
+    <autogen>__KeyToKey__ KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_DOWN</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_UP</autogen>
+  </item>
+
+  <item>
+    <name>Chrome copy/paste hacks</name>
+    <appendix>Change C-c to copy</appendix>
+    <appendix>Change C-v to paste</appendix>
+    <identifier>private.app_chrome_copy_paste</identifier>
+    <only>GOOGLE_CHROME</only>
+    <autogen>__KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+  </item>
+
+  <item>
+    <name>Slack hacks</name>
+    <appendix>Change C-j to channel down</appendix>
+    <appendix>Change C-k to channel up</appendix>
+    <identifier>private.app_slack_channel_up_down</identifier>
+    <only>SLACK</only>
+    <autogen>__KeyToKey__ KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_DOWN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_UP, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+  </item>
+</root>
