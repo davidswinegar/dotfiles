@@ -129,3 +129,10 @@ set noshowmode
 
 " default to /g in search necessary for global
 set nogdefault
+
+" move by display lines
+
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj
+noremap  <buffer> <silent> 0 g0
+noremap  <buffer> <silent> $ g$
