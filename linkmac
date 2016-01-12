@@ -4,7 +4,7 @@ echo $SCRIPT_DIR
 ln -i ./gitconfig ~/.gitconfig
 ln -i ./gitignore ~/.gitignore
 ln -i ./bash_aliases ~/.bash_profile
-ln -i ./sublime-text-3 ~/.config/sublime-text-3/Packages/User
+ln -i ./sublime-text-3/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -i ./vimrc ~/.vimrc
 ln -i ./tmux.conf ~/.tmux.conf
 ln -i ./update_project.py ~/.update_project.py

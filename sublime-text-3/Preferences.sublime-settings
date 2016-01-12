@@ -1,21 +1,22 @@
 {
-    "atomic_save": false,
-    "default_line_ending": "unix",
-    "folder_exclude_patterns":
-    [
-        ".git",
-        "node_modules"
-    ],
-    "font_size": 10,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "indent_to_bracket": true,
-    "rulers":
-    [
-        80
-    ],
-    "translate_tabs_to_spaces": true,
-    "use_tab_stops": true
+	"atomic_save": false,
+	"default_line_ending": "unix",
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules"
+	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Superlime",
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"rulers":
+	[
+		80
+	],
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true
 }
