@@ -54,12 +54,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-"remap for quick movement
-" debug why this won't work
-nnoremap <S-U> <S-J>
-nnoremap <S-j> <S-}>
-nnoremap <S-k> <S-{>
-
 " remap for new tab
 nnoremap <C-n> <C-t>
 nnoremap <C-t> :tabnew<CR>
