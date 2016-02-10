@@ -1,6 +1,6 @@
 [
-    {"keys": ["ctrl+f"], "command": "move", "args": {"by": "page", "forward": true, "extend": true}},
-    {"keys": ["ctrl+b"], "command": "move", "args": {"by": "page", "forward": false, "extend": true}},
+    { "keys": ["ctrl+f"], "command": "scroll_lines", "args" : {"amount": -50.0} },
+    { "keys": ["ctrl+b"], "command": "scroll_lines", "args" : {"amount": 50.0} },
     { "keys": ["ctrl+c"], "command": "_enter_normal_mode",
         "args":{ "mode": "mode_insert" },
         "context": [ { "key": "vi_insert_mode_aware" } ]
@@ -9,6 +9,7 @@
         "args":{ "mode": "mode_visual" },
         "context": [ { "key": "vi_insert_mode_aware" } ]
     }
+
     // {"keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
     // {"keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
     // {"keys": ["shift+ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true}},

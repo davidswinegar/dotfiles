@@ -5,7 +5,15 @@ import sys
 
 def create_sublime_project(project_dir):
     project_file_dir = os.path.expanduser("~/sublime-projects")
+    if not os.path.exists(project_file_dir):
+        os.makedirs(project_file_dir)
     session_path = os.path.expanduser('~/.config/sublime-text-3/Local/Session.sublime_session')
+    # may be mac
+    if not os.path.exists(session_path):
+        session_path = os.path.expanduser('~/Library/Application Support/Sublime Text 3/Local/Session.sublime_session')
+    if not os.path.exists(session_path):
+      print('Cannot find sublime session')
+      exit(1)
 
     (_, project_name) = os.path.split(project_dir)
     project_file_path = os.path.join(project_file_dir, project_name + '.sublime-project')
