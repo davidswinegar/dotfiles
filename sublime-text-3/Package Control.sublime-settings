@@ -7,10 +7,13 @@
 	"installed_packages":
 	[
 		"Babel",
+		"FuzzyFilePath",
 		"Jade",
 		"Package Control",
 		"Sass",
 		"SML (Standard ML)",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"Superlime",
 		"TrailingSpaces",
 		"Vintageous"

@@ -1,10 +1,12 @@
 {
 	"atomic_save": false,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"default_line_ending": "unix",
 	"folder_exclude_patterns":
 	[
 		".git",
-		"node_modules"
+		"node_modules",
+		".vagrant"
 	],
 	"font_size": 13,
 	"ignored_packages":
